@@ -16,3 +16,5 @@ SELECT distinct product_code FROM sales.transactions WHERE market_code="Mark001"
 # In POWERBI I have performed ETL and data cleaning to make the data clean
 # The code that I used to create a column names norm_sales_amount is as follows.
 = Table.AddColumn(clean_up_currency, "norm_sales_amount", each if [currency] = "USD#(cr)" then [sales_amount]*80 else [sales_amount])
+![image](https://user-images.githubusercontent.com/116423607/227001519-ab455029-eef5-4e7e-a958-e3a269e4b5ae.png)
+
